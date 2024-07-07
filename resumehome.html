@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sankur Kundu - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #3463d2, #1b3b7b);
+      overflow-x: hidden;
+    }
+
+    /* Header Styles */
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero {
+      animation: fadeIn 1s ease-in-out;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 6rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Main Content Styles */
+    main {
+      padding: 4rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    section:hover {
+      transform: translateY(-10px);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    h4 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    /* About Styles */
+    .about {
+      text-align: center;
+    }
+
+    .about p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    /* Project Item Styles */
+    .project-item {
+      margin-bottom: 3rem;
+    }
+
+    .project-item h3 a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 0.5rem;
+    }
+
+    .project-item h3 a i {
+      font-size: 1.2rem;
+    }
+
+    /* Skills Item Styles */
+    .skills-item {
+      margin-bottom: 2rem;
+    }
+
+    /* Background Animation */
+    .background-animation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .background-animation div {
+      position: absolute;
+      display: block;
+      list-style: none;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      animation: animate 25s linear infinite;
+      bottom: -150px;
+    }
+
+    .background-animation div:nth-child(1) {
+      left: 25%;
+      width: 80px;
+      height: 80px;
+      animation-delay: 0s;
+    }
+
+    .background-animation div:nth-child(2) {
+      left: 10%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 2s;
+      animation-duration: 12s;
+    }
+
+    .background-animation div:nth-child(3) {
+      left: 70%;
+      width: 50px;
+      height: 50px;
+      animation-delay: 4s;
+      animation-duration: 18s;
+    }
+
+    .background-animation div:nth-child(4) {
+      left: 40%;
+      width: 30px;
+      height: 30px;
+      animation-delay: 6s;
+      animation-duration: 15s;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes animate {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <h1>Sankur Kundu</h1>
+      <h2>Resume</h2>
+    </div>
+    <div class="background-animation">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I am a passionate and driven computer science student, currently pursuing a BTech degree in Computer Science and Engineering (AIML) at the Institute of Engineering and Management, Kolkata. With a strong foundation in data structures, algorithms, and programming languages, I am constantly exploring the latest advancements in artificial intelligence and machine learning.</p>
+      <p>Throughout my academic journey, I have developed a diverse set of skills, including web development, software engineering, and project management. I am particularly interested in the intersection of technology and real-world problem-solving, which has led me to undertake several exciting projects that showcase my technical expertise and innovative mindset.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>BTech in Computer Science and Engineering (AIML)</h3>
+        <p>Expected Graduation: May 2026</p>
+        <p>Institute of Engineering and Management, Kolkata</p>
+        <p>Courses: Data Structures & Algorithms, Java OOP, Web Applications, C++ Program Design, Generative AI</p>
+      </div>
+      <div class="education-item">
+        <h3>Higher Secondary - Science</h3>
+        <p>Doon International School, Bhubaneswar</p>
+      </div>
+      <div class="education-item">
+        <h3>Secondary - Science</h3>
+        <p>DAV Public School, CDA, Cuttack</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>
+          1. TravaSphere
+          <a href="https://github.com/ZionAdmirer/TravaSphere" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </h3>
+        <p>1.Designed and developed an intuitive, responsive travel website using HTML, CSS, and JavaScript to enhance the user experience</p>
+        <p>2.Implemented an appealing, user-friendly interface with seamless booking integration for flights, hotels, and activities</p>
+        <p>3.Leveraged JavaScript to create dynamic, interactive elements and personalized recommendations for users.</p>
+      </div>
+      <div class="project-item">
+        <h3>
+          2. Fit-AI - Personalized Fitness Coach
+          <a href="https://zionadmirer.github.io/FitAI-website/Home.html" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </h3>
+        <p>1.Developed the front-end user interface for a web-based fitness coaching application using HTML, CSS, and JavaScript</p>
+        <p>2.Designed responsive, mobile-friendly layouts to ensure seamless accessibility across devices</p>
+        <p>3.Implemented interactive features, such as workout tracking and progress visualization, to enhance user engagement.</p>
+      </div>
+      <div class="project-item">
+        <h3>
+          3. Vista - Social Networking Platform
+          <a href="https://zionadmirer.github.io/Vista-website/xhome.html" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </h3>
+        <p>1.Contributed to the front-end development of a modern social networking platform using HTML, CSS, and JavaScript</p>
+        <p>2.Designed intuitive user profiles, newsfeed, and community features with a focus on responsive, mobile-first design</p>
+        <p>3.Integrated advanced front-end functionalities, such as real-time updates, search, and notifications, to provide a smooth user experience</p>
+      </div>
+      <div class="project-item">
+        <h3>
+          4. Aster - AI-Powered Mental Health Chatbot
+          <a href="https://zionadmirer.github.io/Aster-website/asterhome.html" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </h3>
+        <p>1.Developed the front-end user interface for an AI-powered chatbot application using React.js and TypeScript.</p>
+        <p>2.Implemented intuitive and responsive UI components to provide a seamless user experience for mood tracking, interactive exercises, and resource navigation.</p>
+        <p>3.Collaborated with the backend team to ensure smooth integration of natural language processing and machine learning capabilities.</p>
+        <p>4.Designed and built interactive features such as guided meditations, breathing techniques, and journaling exercises to help users manage their mental health.</p>
+        <p>5.Leveraged TypeScript to maintain code quality and scalability of the front-end codebase.</p>
+      </div>
+      <div class="project-item">
+        <h3>
+          5. Hermit-Educational Website
+          <a href="https://zionadmirer.github.io/Hermit-website/hermithome.html" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </h3>
+        <p>1.Developed the user interface and interactive features of an interactive educational platform using HTML, CSS, and JavaScript.</p>
+        <p>2.Implemented responsive design and accessibility best practices to ensure a seamless user experience across devices.</p>
+        <p>3.Integrated discussion forums and live chat functionality using JavaScript libraries, enabling students to connect with their peers and instructors, fostering collaboration and knowledge sharing.</p>
+      </div>
+      <div class="project-item">
+        <h3>
+          6. Master - E-commerce Website
+          <a href="https://zionadmirer.github.io/Master-website/masterhome.html" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </h3>
+        <p>1.Developed the front-end user interface for a comprehensive e-commerce website using HTML, CSS, and JavaScript.</p>
+        <p>2.Designed responsive, mobile-friendly layouts to ensure seamless accessibility across devices.</p>
+        <p>3.Developed category-specific content for various product categories:</p>
+        <ul>
+          <li>•Skincare tips</li>
+          <li>•Toy and game features</li>
+          <li>•Appliance features and categories</li>
+          <li>•Furniture features and categories</li>
+          <li>•Electronics features and categories</li>
+          <li>•Fashion features and categories</li>
+          <li>•Home and garden features and categories</li>
+          <li>•Sports and outdoor features and categories</li>
+          	
+        </ul>
+        <p>4.Utilized reusable components (header, footer, product cards) to maintain efficiency and ease of maintenance in development.</p>
+        <p>5.Optimized the website for performance and enhanced user experience.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-item">
+        <h3>Programming Skills</h3>
+        <ul>
+          <li><h1>Front-end Development:</h1> HTML, CSS, JavaScript, React, Bootstrap, Responsive Design</li>
+          <li><h1>Programming Languages: </h1> Python, C++, Java, SQL</li>
+          <li><h1>Cloud Computing:</h1>AWS, Azure</li>
+          <li><h1>Tools:</h1>VS Code, Android Studio, JupyterNotebook, MySQL</li>
+
+        </ul>
+      </div>
+      <div class="skills-item">
+        <h3>Other Skills</h3>
+        <ul>
+          <li>1.HTML</li>
+          <li>2.CSS/Bootstrap</li>
+          <li>3.Azure</li>
+          <li>4.VS-code</li>
+          <!-- <li>AWS</li> -->
+          <li>5.Android Studio</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Add any additional JavaScript functionality here
+  </script>
+</body>
+</html>
